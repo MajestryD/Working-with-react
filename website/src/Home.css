@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+body{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    max-height: 1500px;
+    min-height: 600px;
+}
+div.body{
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+}
+
+div.side_nav{
+    flex-flow: column;
+    width: 250px;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    bottom: 0;
+    position: relative;
+}
+
+div img{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    display: block;
+}
+div.Links a{
+    margin-right: 5%;
+    color: black;
+    text-decoration: none;
+
+}
+
+div.Links ul{
+    list-style: none;
+
+}
+
+div.Links ul a{
+    color: #b2b2b4;
+}
+div.Links li{
+    margin: 5px;
+    padding-bottom: 5px;
+
+}
+
+div.Links li:last-child{
+    padding-bottom: 0px;
+}
+
+div.Links{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    margin-right: 5px;
+    text-align: right;
+}
+
+div.Contact_bar{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin: 10% 10%;
+    bottom: 10px;
+}
+
+div.Contact_bar a{
+    width: 40px;
+    height: 40px;
+}
+
+
+div.main_page{
+    width: 100%;
+    background-color: #f9f9fa;
+    background-image: url("selfie2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-position: 35% 0;
+}
+
+div.text{
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+
+div.title{
+    border: soild blue;
+    border-radius: 25px;
+    display: flex;
+    margin: 2.5%;
+    width: 95%;
+    height: 80px;
+    background-color: rgb(54, 115, 255);
+    background-image: url("forest_title2.jpg");
+    background-position: center ;
+    position: absolute;
+    background-blend-mode: multiply;
+}
+
+div.current{
+    width:80%;
+    text-align: center;
+    align-self: center;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    margin-right: 5%;
+    overflow: none;
+}
+
+div.link_class{
+    width: 80px;
+    height: 100%;
+    border-radius: 20px 10px 10px 20px ;
+    text-align: center;
+    font-size: 2.2em;
+    background-image: linear-gradient(to right,#0539af, #032982);
+    text-shadow: 1px 2px 4px black;
+}
+
+div.name{
+    width: 13%;
+    min-width: 110px;
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.5em;
+    align-self: flex-end;
+    margin-right:35%;
+    margin-top: 165px;
+    text-shadow: 1px 2px 4px black;
+}
+
+div.about{
+    font-size: 1.8vw;
+    width: 40%;
+    align-self: flex-end;
+    margin-right: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: #b2b2b4;
+    overflow: hidden;
+}
+
+div.about span{
+    color: red;
+}
+
+div.about p{
+    margin: 0;
+}
+
+
+
+/*media query section*/
+
+
+@media (max-width:768px)  {
+
+  div.body{
+    flex-flow: column;
+  }
+
+  /*div.side_nav{
+      flex-flow: column;
+      width: 250px;
+      position: fixed;
+      background-color: white;
+      display: flex;
+      bottom: 0;
+      position: relative;
+  }*/
+  div img{
+    height: 40px;
+    width: 40px;
+    margin: 0;
+  }
+
+  div.side_nav{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    min-width: 365px;
+  }
+
+  div.Links {
+	display: flex;   /* Allow the centering to work */
+	margin: 0;
+  flex-flow: column;
+  margin-top: 25px;
+ }
+
+  div.Links ul {
+	list-style: none;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  padding:0;
+  width: auto;
+	}
+
+	div.Links ul li {
+    margin: auto;
+    padding: 0;
+	}
+
+  div.Contact_bar{
+    flex-flow: row;
+    margin:0;
+    display: none;
+  }
+
+  div.main_page{
+    height: 100%;
+    min-width: 365px;
+  }
+
+  div.about{
+      font-size: 15px;
+      width: 40%;
+      align-self: flex-end;
+      margin-right: 5%;
+      margin-top: 3%;
+      margin-bottom: 3%;
+      color: #b2b2b4;
+      overflow: hidden;
+  }
+
+  div.name{
+      width: 13%;
+      min-width: 110px;
+      text-align: center;
+      font-size: 1.5em;
+      line-height: 1.5em;
+      align-self: flex-end;
+      margin-right:35%;
+      margin-top: 25%;
+      text-shadow: 1px 2px 4px black;
+
+  }
+}
+
+@media (max-width:500px) {
+  div.about{
+      font-size: 13px;
+      width: 40%;
+      align-self: flex-end;
+      margin-right: 5%;
+      margin-top: 3%;
+      margin-bottom: 3%;
+      color: #b2b2b4;
+      overflow: hidden;
+  }
+
+  div.name{
+     font-size: 1em;
+     margin-right: 25%;
+     margin-top: 30%;
+  }
+}
