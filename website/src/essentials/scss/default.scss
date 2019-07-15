@@ -1,3 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
 header{
-  background-color: blue;
+
+  background-color: rgb(1, 29, 58);
+  width: 250px;
+  height: 100vh;
+  box-shadow: 2px 2px 4px grey;
+  float:left;
+
+  .Links{
+    align-self: center;
+
+  }
+  button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    color: rgb(43, 144, 255);
+    outline: none;
+  }
+  button:hover,
+  button:visited,
+  button:focus {
+    text-decoration: none;
+  }
+
+  .side_nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+  }
+
+  a{
+    text-decoration: none;
+    color: rgb(43, 144, 255);
+  }
+  ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+  }
+  li{
+    margin: 10px;
+  }
+  img{
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+}
+
+//First.js
+
+.first{
+  font-family: 'Quicksand', sans-serif;
+  background-image: url("../../components/pages/Selfie2.jpg");
+  background-color: black;
+  opacity: 0.8;
+  height: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .Name{
+    font-size: 40px;
+    width: 20%;
+    min-width: 110px;
+    text-align: center;
+    align-self: flex-end;
+    margin-right:35%;
+    margin-top: 165px;
+    text-shadow: 1px 1px grey;
+  }
+
+  .about{
+    font-size: 40px;;
+    width: 40%;
+    align-self: flex-end;
+    margin-right:100px;
+    margin-bottom: 3%;
+    color: #b2b2b4;
+    overflow: hidden;
+  }
+  span{
+    color:red;
+  }
+
 }

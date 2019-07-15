@@ -33,4 +33,4 @@ function watch_scss(){
 };
 
 //Run tasks
-exports.default = compile_scss;
+exports.default = watch_scss;

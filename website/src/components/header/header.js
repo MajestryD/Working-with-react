@@ -1,28 +1,36 @@
 import React from 'react';
+import logo from './sprite2.png';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 
 function Header() {
   return (
+
     <header>
       <div className = "side_nav">
+        <img src={require('./sprite2.svg')} />
         <div className="Links">
-            <ul>
-                <li><a href="chef.html" > Chef </a></li>
-                <li><a href="#"> Programmer</a></li>
-                <li><a href="#"> Hobbyist</a></li>
-                <li><a href="#"> Biography</a></li>
-                <li><a href="#"> Contact</a></li>
-            </ul>
-        </div>
-
-        <div className="Contact_bar">
-            <a href="#"> Facebook  </a>
-            <a href="#"> Instagram </a>
-            <a href="#"> Twitter </a>
-            <a href="#"> LinkedIn</a>
+          <ul>
+            {posts}
+          </ul>
         </div>
       </div>
     </header>
   );
+};
+
+
+function chef(e) {
+  e.preventDefault();
+  console.log('The link was clicked.');
 }
 
+
+
+const posts = [
+  <li><button onClick={chef} > Home </button></li>,
+  <li><button onClick={chef} > About </button></li>,
+  <li><button onClick={chef} > Resume </button></li>,
+  <li><button onClick={chef} > Contact </button></li>
+];
 export default Header;

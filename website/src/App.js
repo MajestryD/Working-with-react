@@ -1,14 +1,14 @@
-import React from 'react';
-import Head from './components/header/header'
-import Footer from './components/footer/footer'
+import Land from './components/landing/landing'
 import './essentials/css/default.min.css'
+import React, { Component } from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <Head/>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Land/>
+      </div>
+      )
+  }
 }
-
-export default App;
+export default App
