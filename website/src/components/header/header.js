@@ -1,21 +1,24 @@
 import React from 'react';
 import logo from './sprite2.png';
+import Icons from './icons'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
 function Header() {
   return (
 
-    <header>
-      <div className = "side_nav">
-        <img src={require('./sprite2.svg')} />
-        <div className="Links">
-          <ul>
-            {posts}
-          </ul>
-        </div>
+    <div className = "side_nav">
+
+      <img className = "face" src={require('./sprite2.svg')} />
+
+      <div className="Links">
+        <ul>
+          {posts}
+        </ul>
       </div>
-    </header>
+
+      <Icons/>
+    </div>
   );
 };
 

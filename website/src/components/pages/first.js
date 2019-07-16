@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Career from './career'
 
 export default class first extends Component {
   render() {
@@ -9,8 +10,12 @@ export default class first extends Component {
         </div>
 
         <div className = "about">
-          <p><span> I'm Daniel Peng,</span> <br/>and i'm a developer</p>
+          <p><span> I'm Daniel Peng</span></p>
         </div>
+
+        <Career/>
+
+
 
       </div>
 

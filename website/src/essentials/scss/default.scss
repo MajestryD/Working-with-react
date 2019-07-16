@@ -2,67 +2,70 @@
   margin: 0;
   padding: 0;
 }
-
-
-header{
-
+.side_nav{
   background-color: rgb(1, 29, 58);
   width: 250px;
   height: 100vh;
-  box-shadow: 2px 2px 4px grey;
+  box-shadow: 5px 5px 5px black;
   float:left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  .Links{
-    align-self: center;
-
-  }
-  button{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    display: inline;
-    margin: 0;
-    padding: 0;
-    color: rgb(43, 144, 255);
-    outline: none;
-  }
-  button:hover,
-  button:visited,
-  button:focus {
-    text-decoration: none;
-  }
-
-  .side_nav{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content:space-around;
-    flex-direction: column;
-  }
-
-  a{
-    text-decoration: none;
-    color: rgb(43, 144, 255);
-  }
-  ul{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content:space-around;
-    flex-direction: column;
-  }
-  li{
-    margin: 10px;
-  }
-  img{
+  .face{
     width: 200px;
     height: 200px;
+    position: relative;
+    top:15px;
+    left:20px;
+  }
+
+  .Links{
+    align-self:flex-end;
+    margin-bottom: 100px;
+    width: 100%;
+
+    button{
+      font-family: 'Quicksand', sans-serif;
+      width: 100%;
+      height: 100px;
+      background-color: rgb(1, 29, 58);
+      font-size: 30px;
+      font-weight: 700;
+      color: rgb(43, 144, 255);
+      border: none;
+      cursor: pointer;
+    }
+    button:hover,
+    button:visited,
+    button:focus {
+      text-decoration: none;
+    }
+    ul{
+      width: 100%;
+      list-style: none;
+      display: flex;
+      justify-content:space-around;
+      flex-direction: column;
+    }
+  }
+  .icon_bar{
     align-self: center;
-    position: absolute;
-    top: 16px;
-    left: 16px;
+    width:80%;
+    height: 100px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    img{
+      width:30px;
+      height: 30px;
+    }
   }
 }
+
+
+
 
 //First.js
 
@@ -71,10 +74,11 @@ header{
   background-image: url("../../components/pages/Selfie2.jpg");
   background-color: black;
   opacity: 0.8;
-  height: 100%;
   height: 100vh;
+  width: 80vw;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 
   .Name{
     font-size: 40px;
@@ -82,7 +86,7 @@ header{
     min-width: 110px;
     text-align: center;
     align-self: flex-end;
-    margin-right:35%;
+    margin-right:45%;
     margin-top: 165px;
     text-shadow: 1px 1px grey;
   }
@@ -91,13 +95,49 @@ header{
     font-size: 40px;;
     width: 40%;
     align-self: flex-end;
-    margin-right:100px;
+    margin-right:250px;
     margin-bottom: 3%;
     color: #b2b2b4;
     overflow: hidden;
   }
   span{
     color:red;
+  }
+
+  .goals{
+    width: 800px;
+    align-self: center;
+    position: absolute;
+    bottom: 350px;
+    right: 10px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+
+    p{
+      font-size: 40px;;
+      color: #b2b2b4;
+      align-items: center;
+      display: flex;
+      flex-flow: column;
+
+      .coding{
+        width: 200px;
+        height: 200px;
+
+      }
+      .pencil{
+        width: 200px;
+        height: 200px;
+
+      }
+      .books{
+        width: 200px;
+        height: 200px;
+
+      }
+
+    }
   }
 
 }
