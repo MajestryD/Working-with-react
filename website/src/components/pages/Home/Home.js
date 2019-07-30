@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Career from './career'
+import Career from '../Career/Career'
 
 export default class first extends Component {
   render() {

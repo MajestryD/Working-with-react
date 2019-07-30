@@ -28,13 +28,43 @@
     button{
       font-family: 'Quicksand', sans-serif;
       width: 100%;
-      height: 100px;
+      height: 120px;
       background-color: rgb(1, 29, 58);
       font-size: 30px;
       font-weight: 700;
       color: rgb(43, 144, 255);
       border: none;
       cursor: pointer;
+      line-height: 30px;
+
+      hr{
+        text-align: center; /* horizontal centering */
+        align-items: center;
+        align-content: center;
+        line-height: 0px; /* vertical centering */
+        height: 1px; /* gap between the lines */
+        border-width: 2px 0 0 0; /* top and bottom borders */
+        border-style: solid;
+        border-color: rgb(43, 144, 255);
+        font-size: 100;
+        margin: 15px 30px 2px 30px; /* 20px space above/below, 10px left/right */
+        overflow: visible;
+      }
+      hr:after{
+        content: " ";
+        background: url("../../components/header/Buttons/Home_icon.svg")no-repeat center;
+        background-color: rgb(1, 29, 58);
+        /* Controls the whitespace around the symbol */
+        display: inline;
+        padding: 0 0.5em;
+        font-weight: 100;
+
+
+      }
+
+      span{
+        font-size: 15px;
+      }
     }
     button:hover,
     button:visited,
@@ -71,7 +101,8 @@
 
 .first{
   font-family: 'Quicksand', sans-serif;
-  background-image: url("../../components/pages/Selfie2.jpg");
+  background-image: url("../../components/pages/Home/Selfie2.jpg");
+  background-size: cover;
   background-color: black;
   opacity: 0.8;
   height: 100vh;

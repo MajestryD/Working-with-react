@@ -6,13 +6,13 @@ export default class Career extends Component {
       <React.Fragment>
         <div className = "goals">
           <p> Developer
-            <img className="coding" src={require('./Coding.svg')} />
+            <img className="coding" src={require('./Images/Coding.svg')} alt ="coding"/>
           </p>
           <p> Artist
-            <img className="pencil" src={require('./pencil2.svg')} />
+            <img className="pencil" src={require('./Images/pencil2.svg')} alt ="artist"/>
           </p>
-          <p>Creator 
-            <img className="books" src={require('./Books.svg')} />
+          <p>Creator
+            <img className="books" src={require('./Images/Books.svg')} alt ="creating"/>
           </p>
 
 
