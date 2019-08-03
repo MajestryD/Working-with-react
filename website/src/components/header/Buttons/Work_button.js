@@ -1,18 +1,15 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 
 export default class Work_button extends Component {
   render() {
     return (
-      <button onClick={chef} >
-        Work
-        <hr/>
-        <span>Projects and hobbies</span>
-      </button>
+      <Link className="button_work" to ="/work">
+          Work
+          <hr/>
+          <span>Projects and hobbies</span>
+      </Link>
+
     );
   }
-}
-
-function chef(e) {
-  e.preventDefault();
-  console.log('The link was clicked.');
 }
