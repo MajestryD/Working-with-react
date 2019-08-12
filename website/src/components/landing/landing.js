@@ -13,12 +13,12 @@ class Land extends Component {
 
         <div className = "landing_page">
           <Header />
-          <switch>
+          <Switch>
             <Route path ="/" exact component = {Home}/>
             <Route path ="/about" exact component = {About}/>
             <Route path ="/contact" exact component = {Contact}/>
-            <Route path ="/work" exact component = {Work}/>
-          </switch>
+            <Route path ="/work" component = {Work}/>
+          </Switch>
         </div>
       </Router>
 

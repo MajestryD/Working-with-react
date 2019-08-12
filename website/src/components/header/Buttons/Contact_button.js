@@ -6,7 +6,7 @@ export default class Contact_Home extends Component {
     return (
       <Link className="button_work" to ="/contact">
         Contact
-        <hr/>
+        <hr className = "contact_icon"/>
         <span>Let's get in touch</span>
       </Link>
     );
