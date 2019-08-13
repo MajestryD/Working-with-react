@@ -4,11 +4,15 @@
   width: 100%;
   height: 100vh;
   background-color: rgba(131,131,131,0.11);
+  overflow: scroll;
   .me{
     padding: 3% 5% 1% 5%;
     width: 90%;
     font-size: 2vw;
     font-weight: 700;
+    animation-name: left_right;
+    animation-duration: 0.75s;
+    animation-timing-function: cubic-bezier(0,0,.2,1);
   }
   .i_am_a{
     text-align: center;
@@ -22,6 +26,9 @@
     width: 90%;
     font-size: 2vw;
     font-weight: 700;
+    animation-name: left_right;
+    animation-duration: 0.75s;
+    animation-timing-function: cubic-bezier(0,0,.2,1);
     a{
       text-decoration: none;
       color:black;
@@ -56,6 +63,9 @@
         color: black;
         font-size: 20px;
         font-weight: 700;
+        animation-name: bottom_top;
+        animation-duration: 0.75s;
+        animation-timing-function: cubic-bezier(0,0,.2,1);
         .work_items{
           border-radius: 99em;
           box-shadow: 0 3px 2px rgba(0,0,0,0.3);
@@ -103,6 +113,16 @@
   justify-content:space-between;
   text-align: center;
   width: 100%;
+  .nav_left{
+    animation-name: left_right;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0,0,.2,1);
+  }
+  .nav_right{
+    animation-name: right_left;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0,0,.2,1);
+  }
   a{
     text-decoration:  underline;
     color: black;
@@ -123,9 +143,11 @@
     margin: auto;
     align-items: center;
     text-align: center;
-    line-height: 0px;
     font-size: 20px;
     font-weight: 700;
+    animation-name: left_right;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0,0,.2,1);
     img{
       width: 100%;
     }
@@ -133,6 +155,9 @@
   .project_summary{
     margin:auto;
     width: 60%;
+    animation-name: top_bottom;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0,0,.2,1);
     span{
       font-size: 30px;
       font-weight: 700;
@@ -151,6 +176,9 @@
     display:block;
     text-decoration: none;
     color:black;
+    animation-name: right_left;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0,0,.2,1);
     .YouTube{
       width: 100%;
     }
@@ -187,6 +215,9 @@
     line-height: 15px;
     margin: auto;
     text-decoration: none;
+    animation-name: right_left;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0,0,.2,1);
 
     .octome{
       width: 100%;

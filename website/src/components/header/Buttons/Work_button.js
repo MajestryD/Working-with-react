@@ -5,7 +5,7 @@ export default class Work_button extends Component {
   render() {
     return (
       <Link className="button_work" to ="/work">
-          Work
+          <p>Work</p>
           <hr className = "work_icon"/>
           <span>Projects and hobbies</span>
       </Link>

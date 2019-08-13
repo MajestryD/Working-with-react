@@ -7,6 +7,17 @@ export default class expetise extends Component {
 
         <div className = "tech_items">
           <div className="tech_img">
+            <p>Skills</p>
+
+          </div>
+
+          <div>
+            {skills}
+          </div>
+        </div>
+
+        <div className = "tech_items">
+          <div className="tech_img">
             <p>Languages</p>
 
           </div>
@@ -17,16 +28,7 @@ export default class expetise extends Component {
 
         </div>
 
-        <div className = "tech_items">
-          <div className="tech_img">
-            <p>Skills</p>
 
-          </div>
-
-          <div>
-            {skills}
-          </div>
-        </div>
 
         <div className = "tech_items">
           <div className="tech_img">
@@ -44,27 +46,27 @@ export default class expetise extends Component {
   }
 }
 const languages = [
-  <li>Java</li>,
-  <li>JavaScript</li>,
-  <li>C</li>,
-  <li>C++</li>
+  <li key ={1}>Java</li>,
+  <li key ={2}>JavaScript</li>,
+  <li key ={3}>C</li>,
+  <li key ={4}>C++</li>
 ];
 
 const skills = [
-  <li>CSS/HTML</li>,
-  <li>SASS with Gulp</li>,
-  <li>React CRA, Redux, React Router</li>,
-  <li>SDLC(Software Development Life Cycle)practices</li>,
-  <li>Object oriented programming</li>,
-  <li>Microcontrollers and FPGA</li>
+  <li key ={1}>CSS/HTML</li>,
+  <li key ={2}>SASS with Gulp</li>,
+  <li key ={3}>React CRA, Redux, React Router</li>,
+  <li key ={4}>SDLC(Software Development Life Cycle)practices</li>,
+  <li key ={5}>Object oriented programming</li>,
+  <li key ={6}>Microcontrollers and FPGA</li>
 ];
 
 const software = [
-  <li>Atom</li>,
-  <li>Adobe Photoshop</li>,
-  <li>Inkscape</li>,
-  <li>Painttool Sai</li>,
-  <li>Microsoft Office</li>
+  <li key ={1}>Atom</li>,
+  <li key ={2}>Adobe Photoshop</li>,
+  <li key ={3}>Inkscape</li>,
+  <li key ={4}>Painttool Sai</li>,
+  <li key ={5}>Microsoft Office</li>
 ];
 
 /*

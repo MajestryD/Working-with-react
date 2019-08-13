@@ -13,19 +13,26 @@ export default class Work extends Component {
           <p className = "me">
             <span className = "red">Daniel's</span> Resume
           </p>
-          <p className = "project">
-            Techinical expertise
-          </p>
 
+          <div>
+            <p className = "project">
+              Technical expertise
+            </p>
             <Expertise />
-
-          <p className = "project">
-            <Link to = '/work'>Projects</Link>
-          </p>
-
-          <div className = "project_container">
-            <Projects/>
           </div>
+
+
+
+          <div>
+            <p className = "project">
+              <Link to = '/work'>Projects</Link>
+            </p>
+
+            <div className = "project_container">
+              <Projects/>
+            </div>
+          </div>
+
         </div>
 
 

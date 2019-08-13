@@ -23,13 +23,13 @@ export default class Project extends Component {
 }
 
 const works = [
-  <Link className ="work_link" to ="/work/controller"><img className = 'work_items' src={require('./microcontroller.svg')} alt ="microcontroller"/>
+  <Link key ={1} className ="work_link" to ="/work/controller"><img className = 'work_items' src={require('./microcontroller.svg')} alt ="microcontroller"/>
   <span>My microcontroller project</span></Link>
   ,
-  <Link className ="work_link" to ="/work/site"><img className = 'work_items' src={require('./sprite2.svg')} alt ="me"/><span>Personal Website </span>
+  <Link key ={2} className ="work_link" to ="/work/site"><img className = 'work_items' src={require('./sprite2.svg')} alt ="me"/><span>Personal Website </span>
   </Link>
   ,
-  <Link className ="work_link" to ="/work/appraise"><img className = 'work_items' src={require('./Appraise-me.svg')} alt ="appraise.me"/> <span></span>An appraisal system
+  <Link key ={3} className ="work_link" to ="/work/appraise"><img className = 'work_items' src={require('./Appraise-me.svg')} alt ="appraise.me"/> <span></span>An appraisal system
   </Link>
 
 ];

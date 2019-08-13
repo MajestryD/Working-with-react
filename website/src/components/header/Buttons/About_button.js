@@ -5,7 +5,7 @@ export default class Button_Home extends Component {
   render() {
     return (
       <Link className="button_work" to ="/about">
-        About
+        <p>About</p>
         <hr className = "about_icon"/>
         <span>Who I am</span>
       </Link>

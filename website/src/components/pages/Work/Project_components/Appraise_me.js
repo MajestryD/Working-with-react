@@ -7,8 +7,8 @@ export default class Appraise extends Component {
 
       <div className = "project_all">
         <div className = "project_nav">
-          <Link exact to = '/work/site'><h3> Website</h3></Link>
-          <Link exact to = '/work/controller'><h3>Microcontroller</h3></Link>
+          <Link className= "nav_left" to = '/work/site'><h3> Website</h3></Link>
+          <Link className= "nav_right" to = '/work/controller'><h3>Microcontroller</h3></Link>
         </div>
 
         <div className = "about_project">

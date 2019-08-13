@@ -35,7 +35,7 @@ export default class contact extends Component {
 
             </div>
 
-            <span>Thanks for visiting my website</span>
+            <span className = "exit_statement">Thanks for visiting my website</span>
 
 
 

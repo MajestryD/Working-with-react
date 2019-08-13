@@ -7,8 +7,8 @@ export default class Website extends Component {
 
       <div className = "project_all">
         <div className = "project_nav">
-          <Link exact to = '/work/controller'><h3>Microcontroller</h3></Link>
-          <Link exact to = '/work/appraise'><h3> Appraise.me</h3></Link>
+          <Link className= "nav_left"  exact to = '/work/controller'><h3>Microcontroller</h3></Link>
+          <Link className= "nav_right"  exact to = '/work/appraise'><h3> Appraise.me</h3></Link>
 
         </div>
 
