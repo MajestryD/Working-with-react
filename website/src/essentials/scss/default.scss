@@ -148,6 +148,7 @@
       justify-content: flex-start;
       overflow: scroll;
 
+
       h1{
         font-size: 1.5em;
         margin-top: 5vh;
@@ -163,12 +164,13 @@
         flex-wrap: wrap;
         flex-flow: column;
         justify-content: space-between;
+        height: auto;
         .goal_items{
           width: 90%;
           display: flex;
           justify-content: space-between;
           .summary{
-
+            height: 100%;
             margin: 15px 0;
             width: 100%;
             font-size: 15px;
@@ -185,9 +187,15 @@
   body{
     overflow: hidden;
   }
-
+  .about_container{
+    height: 90vh;
+  }
+  .work_container{
+    height: 90vh;
+  }
 
   .contact_container{
+    height: 90vh;
     h1{
       font-size: 1.5em;
       margin-top: 5vh;
@@ -233,11 +241,11 @@
 
 
   .first{
-    margin-top: 7px;
-    height: 90vh;
+    padding-bottom: 5px;
     width: 100%;
     float: none;
     z-index: -1;
+    height: 90vh;
 
     .container{
       background-position: 35% ;
