@@ -40,6 +40,10 @@
       from{transform: translate3d(50px,0,0);}
       to{transform: translateX(0);}
     }
+    @keyframes right_left2{
+      from{transform: translate3d(350px,0,0);}
+      to{transform: translateX(0);}
+    }
 
     @keyframes left_right{
       from{transform: translate3d(-50px,0,0);}

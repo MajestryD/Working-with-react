@@ -23,14 +23,8 @@ export default class Work extends Component {
 
 
 
-          <div>
-            <p className = "project">
-              <Link to = '/work'>Projects</Link>
-            </p>
-
-            <div className = "project_container">
-              <Projects/>
-            </div>
+          <div className = "project_container">
+            <Projects/>
           </div>
 
         </div>

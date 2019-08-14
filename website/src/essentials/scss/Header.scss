@@ -8,7 +8,19 @@
   flex-direction: column;
   justify-content: space-between;
 
+  .burger{
 
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    display: none;
+    div{
+      width: 50px;
+      height: 3px;
+      background-color: white;
+      margin: 10px;
+    }
+  }
   .face{
     width: 150px;
     height: 150px;
@@ -16,6 +28,7 @@
     top:25px;
     left:50px;
   }
+
 
   .Links{
     width: 100%;

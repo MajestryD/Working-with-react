@@ -14,18 +14,20 @@ class Land extends Component {
 
           <div className = "landing_page">
             <Header />
-            <Route render={({ location }) => console.log(location)||(
+            <Route children={({ location }) => console.log(location)||(
               <TransitionGroup>
                 <CSSTransition
                   key={location.key}
-                  timeout ={500}
+                  timeout ={300}
                   classNames ='fade'
+                  unmountOnExit
+
                   >
                   <Switch location ={location}>
                     <Route path ="/" exact component = {Home}/>
                     <Route path ="/about" exact component = {About}/>
                     <Route path ="/contact" exact component = {Contact}/>
-                    <Route path ="/work" component = {Work}/>
+                    <Route path ="/work" exact component = {Work}/>
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>
