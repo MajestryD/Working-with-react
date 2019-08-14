@@ -10,8 +10,6 @@ export default class contact extends Component {
         <div className = " contact_container">
           <h1>Get in Touch with <span className = "red">Daniel</span></h1>
 
-          <div className = "contact_content">
-
             <div className = "contact_info">
               <p className = "contact_text">
                 I would love to hear about you and talk about anything from internships to a simple hello. Do not hesitate to leave a message!
@@ -36,11 +34,6 @@ export default class contact extends Component {
             </div>
 
             <span className = "exit_statement">Thanks for visiting my website</span>
-
-
-
-          </div>
-
 
 
       </div>

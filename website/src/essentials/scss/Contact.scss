@@ -1,37 +1,40 @@
 .contact_container{
-  padding: 3% 5% 1% 5%;
-  width: 90%;
   height: 100vh;
   background-color: rgba(131,131,131,0.11);
   overflow: scroll;
+  padding-left: 10px;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  font-size: 20px;
+  font-weight: 500;
+  justify-content: space-between;
   h1{
+    padding: 3% 5% 1% 5%;
     font-size: 2vw;
     animation-name: left_right;
     animation-duration: 0.75s;
     animation-timing-function: cubic-bezier(0,0,.2,1);
+    align-self: flex-start;
   }
-  .contact_content{
-    padding:1% 5% 1% 5%;
-    text-align: center;
-    width: 90%;
-    height: 80%;
-    display: flex;
-    flex-flow: column;
-    font-size: 20px;
-    font-weight: 500;
-    justify-content: space-around;
+
+
     .exit_statement{
+      align-self: center;
+      margin: 25px auto;
       animation-name: bottom_top;
       animation-duration: 0.75s;
       animation-timing-function: cubic-bezier(0,0,.2,1);
     }
 
     .contact_links{
-      width: 100%;
+      align-self: center;
+      width: 80%;
       display: flex;
       flex-flow: wrap;
       justify-content: space-around;
       a{
+        min-width: 20vw;
         font-weight: 700;
         width: 23%;
         color: black;
@@ -57,7 +60,8 @@
     }
 
     .contact_info{
-      width:100%;
+      align-self: center;
+      width:80%;
       display: flex;
       flex-flow: row;
       justify-content: space-around;
@@ -83,6 +87,6 @@
 
 
     }
-  }
+
 
 }
