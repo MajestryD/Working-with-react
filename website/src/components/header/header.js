@@ -9,15 +9,17 @@ class Header extends Component{
   constructor(props){
     super(props)
     this.state ={
-      isSideBarOpen:false
+      isSideBarOpen:false,
     }
   }
 
   handleMenuButtonClick =() => {
-    this.setState({isSideBarOpen: !this.state.isSideBarOpen})
+      this.setState({isSideBarOpen: !this.state.isSideBarOpen})
+
   }
   render(){
     const { isSideBarOpen} = this.state;
+    const { isDesktop} = this.state;
     const posts = [
       <li className ="one" onClick={this.handleMenuButtonClick} key = {1}><Home/></li>,
       <li className ="two" onClick={this.handleMenuButtonClick} key = {2}><About/></li>,
@@ -30,7 +32,7 @@ class Header extends Component{
 
       <img className = "face" src={require('./sprite2.svg')} alt ="logo me"/>
 
-       <div className={ `Links ${isSideBarOpen ? 'show' : 'hide'}`}>
+       <div className={ `Links ${(isSideBarOpen) ? 'show' : 'hide'}`}>
         <ul>
           {posts}
         </ul>

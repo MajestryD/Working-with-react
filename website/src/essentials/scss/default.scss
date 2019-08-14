@@ -20,18 +20,16 @@
 }
 .fade-enter.fade-enter-active{
   opacity: 1;
-  transition: opacity 0.5s ease-in;
+  transition: opacity 0.2s ease-in;
 }
-.fade-exit {
-  opacity: 0;
+.fade-exit{
+  opacity:1;
   z-index: 1;
 }
-.fade-exit.fade-exit-active {
+.fade-exit.fade-exit-active{
   opacity: 0;
-  transition: opacity 0.5s ease-in;
+  transition: opacity 0.2s ease-in;
 }
-
-
 
 
 @media( max-width:1200px){
@@ -316,9 +314,6 @@
       transform: translateY(0);
       transition: transform 0.3s ease-in;
       z-index: 1;
-      li{
-        box-shadow: 1px 1px 3px black;
-      }
       li.one{
         animation-name: right_left2;
         animation-duration: 0.75s;
@@ -344,20 +339,20 @@
     .Links{
       animation: none;
       position: absolute;
-      right: 0px;
       height: 90vh;
       top: 10vh;
       background-color: rgb(1, 29, 58);
       padding: 0;
       .button_work{
-        height: 25%;
+        height: 100%;
+        width: 100%;
         font-size: 1em;
         cursor: pointer;
-        margin: 5vh auto;
+        margin: 2.5vh auto;
 
 
         hr{
-          height: 100%;
+          height: 80%;
           width: 100%;
           margin:0;
           line-height: 20px;

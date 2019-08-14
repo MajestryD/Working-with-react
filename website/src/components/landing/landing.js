@@ -18,7 +18,7 @@ class Land extends Component {
               <TransitionGroup>
                 <CSSTransition
                   key={location.key}
-                  timeout ={300}
+                  timeout ={200}
                   classNames ='fade'
                   unmountOnExit
 
