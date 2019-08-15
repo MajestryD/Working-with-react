@@ -10,7 +10,7 @@ import {TransitionGroup, CSSTransition} from 'react-transition-group';
 class Land extends Component {
   render() {
     return (
-      <Router>
+      <Router basename = {process.env.PUBLIC_URL}>
 
           <div className = "landing_page">
             <Header />
@@ -24,10 +24,11 @@ class Land extends Component {
 
                   >
                   <Switch location ={location}>
-                    <Route path ="/" exact component = {Home}/>
-                    <Route path ="/about"  component = {About}/>
-                    <Route path ="/contact"  component = {Contact}/>
-                    <Route path ="/work"  component = {Work}/>
+                    <Route path={process.env.PUBLIC_URL + '/'} exact component = {Home}/>
+                    <Route path={process.env.PUBLIC_URL + '/about'}  component = {About}/>
+                    <Route path={process.env.PUBLIC_URL + '/contact'}  component = {Contact}/>
+                    <Route path={process.env.PUBLIC_URL + '/work'}  component = {Work}/>
+                    <Route component = {Home}/>
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>
