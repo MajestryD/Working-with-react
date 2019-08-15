@@ -113,6 +113,11 @@
   justify-content:space-between;
   text-align: center;
   width: 100%;
+  background-color: rgba(120,120,120,0.05);
+  padding: 2px;
+  a{
+    margin: 2px 10px;
+  }
   .nav_left{
     animation-name: left_right;
     animation-duration: 0.5s;

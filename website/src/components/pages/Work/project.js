@@ -8,11 +8,12 @@ import {TransitionGroup, CSSTransition} from 'react-transition-group';
 export default class Project extends Component {
   render() {
     return (
-      <Router>
-        <React.Fragment>
-          <p className = "project">
-            <Link to = '/work'>Projects</Link>
-          </p>
+
+      <React.Fragment>
+        <p className = "project">
+          <Link to = '/work'>Projects</Link>
+        </p>
+        <Router>
           <div className = "works">
             <Switch>
 
@@ -22,9 +23,10 @@ export default class Project extends Component {
               <Route exact path = '/work/site'> <Website/> </Route>
             </Switch>
           </div>
+        </Router>
 
-        </React.Fragment>
-      </Router>
+      </React.Fragment>
+
 
     );
   }
