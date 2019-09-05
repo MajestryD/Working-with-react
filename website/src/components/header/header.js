@@ -19,7 +19,6 @@ class Header extends Component{
   }
   render(){
     const { isSideBarOpen} = this.state;
-    const { isDesktop} = this.state;
     const posts = [
       <li className ="one" onClick={this.handleMenuButtonClick} key = {1}><Home/></li>,
       <li className ="two" onClick={this.handleMenuButtonClick} key = {2}><About/></li>,

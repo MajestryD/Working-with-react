@@ -1,50 +1,51 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class expetise extends Component {
-  render() {
-    return (
-      <div className = "tech_exp">
+const expertise = () =>{
+  return (
+    <div className = "tech_exp">
 
-        <div className = "tech_items">
-          <div className="tech_img">
-            <p>Skills</p>
-
-          </div>
-
-          <div>
-            {skills}
-          </div>
-        </div>
-
-        <div className = "tech_items">
-          <div className="tech_img">
-            <p>Languages</p>
-
-          </div>
-
-          <div>
-            {languages}
-          </div>
+      <div className = "tech_items">
+        <div className="tech_img">
+          <p>Skills</p>
 
         </div>
 
-
-
-        <div className = "tech_items">
-          <div className="tech_img">
-            <p>Software</p>
-
-          </div>
-
-          <div>
-            {software}
-          </div>
-
+        <div>
+          {skills}
         </div>
       </div>
-    );
-  }
+
+      <div className = "tech_items">
+        <div className="tech_img">
+          <p>Languages</p>
+
+        </div>
+
+        <div>
+          {languages}
+        </div>
+
+      </div>
+
+
+
+      <div className = "tech_items">
+        <div className="tech_img">
+          <p>Software</p>
+
+        </div>
+
+        <div>
+          {software}
+        </div>
+
+      </div>
+    </div>
+  );
 }
+
+export default expertise;
+
 const languages = [
   <li key ={1}>Java</li>,
   <li key ={2}>JavaScript</li>,
@@ -68,9 +69,3 @@ const software = [
   <li key ={4}>Painttool Sai</li>,
   <li key ={5}>Microsoft Office</li>
 ];
-
-/*
-  <img  src={require('./languages.svg')} alt ="language"/>
-  <img  src={require('./software.svg')} alt ="software"/>
-  <img  src={require('./skills.svg')} alt ="skills"/>
-*/
